@@ -5,49 +5,49 @@ import {
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuContent,
+  // NavigationMenuTrigger,
+  // NavigationMenuContent,
 } from "@/components/ui/navigation-menu";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+// import {
+//   Select,
+//   SelectContent,
+//   SelectItem,
+//   SelectTrigger,
+//   SelectValue,
+// } from "@/components/ui/select";
 
 interface HeaderProps {
   theme: "light" | "dark";
   onThemeToggle: () => void;
 }
 
-const roles = [
-  "Engineering Manager",
-  "Solution Architect",
-  "Software Architect",
-  "Data Scientist",
-  "Full Stack Developer",
-];
+// const roles = [
+//   "Engineering Manager",
+//   "Solution Architect",
+//   "Software Architect",
+//   "Data Scientist",
+//   "Full Stack Developer",
+// ];
 
-const industries = [
-  "IoT",
-  "Ecommerce",
-  "Medical",
-  "Education",
-  "RPA",
-  "AI Agents",
-];
+// const industries = [
+//   "IoT",
+//   "Ecommerce",
+//   "Medical",
+//   "Education",
+//   "RPA",
+//   "AI Agents",
+// ];
 
 export default function Header({ theme, onThemeToggle }: HeaderProps) {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/75 shadow-sm">
       <div className="container flex h-14 items-center justify-between">
         <div className="flex items-center space-x-8">
-          <h1 className="text-xl font-bold">Babar Javaid</h1>
+          <h1 className="text-xl font-bold"><a href="/">Babar Javaid</a></h1>
 
           <NavigationMenu>
             <NavigationMenuList>
-              <NavigationMenuItem>
+              {/* <NavigationMenuItem>
                 <NavigationMenuTrigger>Blog</NavigationMenuTrigger>
                 <NavigationMenuContent className="bg-popover">
                   <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
@@ -131,7 +131,7 @@ export default function Header({ theme, onThemeToggle }: HeaderProps) {
                     </li>
                   </ul>
                 </NavigationMenuContent>
-              </NavigationMenuItem>
+              </NavigationMenuItem> */}
 
               <NavigationMenuItem>
                 <NavigationMenuLink
@@ -144,7 +144,7 @@ export default function Header({ theme, onThemeToggle }: HeaderProps) {
             </NavigationMenuList>
           </NavigationMenu>
 
-          <div className="flex items-center space-x-4">
+          {/* <div className="flex items-center space-x-4">
             <Select>
               <SelectTrigger className="w-[180px]">
                 <SelectValue placeholder="Select role" />
@@ -173,7 +173,7 @@ export default function Header({ theme, onThemeToggle }: HeaderProps) {
                 ))}
               </SelectContent>
             </Select>
-          </div>
+          </div> */}
         </div>
 
         <div className="flex items-center space-x-4">
