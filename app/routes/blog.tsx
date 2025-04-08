@@ -167,7 +167,7 @@ const Blog = () => {
             </h1>
             <p className="font-opensans mx-auto max-w-2xl text-lg text-[#C0C0C0]">
               Insights and thoughts on software development, architecture, and
-              technology trends
+              technology trends; please note that these are not all my articles and only the contents placeholders. It is a work in progress.
             </p>
           </motion.div>
 

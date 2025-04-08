@@ -321,7 +321,7 @@ const Projects = () => {
               Projects
             </h1>
             <p className="font-opensans mx-auto max-w-2xl text-lg text-[#C0C0C0]">
-              A showcase of my technical projects and professional work
+              A showcase of my technical projects and professional work; please note that these are not all my projects and only the contents placeholders. It is a work in progress.
             </p>
           </motion.div>
 

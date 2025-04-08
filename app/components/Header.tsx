@@ -103,11 +103,11 @@ const Header = ({ className }: HeaderProps = {}) => {
           <img
             src="logo.png"
             alt="Logo"
-            className="w-10 h-10 rounded-md bg-white"
+            className="w-10 h-10 rounded-md bg-[#5aba4a]"
           />
           <Link to="/" className="text-2xl font-bold tracking-tighter">
             <span className="text-white">Babar</span>
-            <span className="text-[#C0C0C0]">Javaid</span>
+            <span className="text-[#5aba4a]">Javaid</span>
           </Link>
         </div>
 
