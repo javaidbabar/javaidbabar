@@ -1,6 +1,4 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { cn } from "@/lib/utils";
 
 interface Skill {
   name: string;
@@ -44,7 +42,7 @@ const SkillsSection = ({
           className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 max-w-5xl mx-auto mb-16"
         >
           <div className="bg-gray-900 p-6 rounded-lg border border-gray-800 hover:border-silver transition-all duration-300 text-center">
-            <p className="text-4xl font-bold text-silver mb-2">8+</p>
+            <p className="text-4xl font-bold text-silver mb-2">20+</p>
             <p className="text-sm text-gray-400">Years Experience</p>
           </div>
           <div className="bg-gray-900 p-6 rounded-lg border border-gray-800 hover:border-silver transition-all duration-300 text-center">
