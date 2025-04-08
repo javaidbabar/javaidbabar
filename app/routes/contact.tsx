@@ -11,7 +11,7 @@ import {
   Send,
   Github,
   Linkedin,
-  Twitter,
+  X,
 } from "lucide-react";
 
 const Contact = () => {
@@ -46,7 +46,7 @@ const Contact = () => {
               </h2>
 
               <p className="font-opensans text-gray-300 mb-8">
-                I'm always open to discussing new projects, creative ideas, or
+                I&apos;m always open to discussing new projects, creative ideas, or
                 opportunities to be part of your vision. Feel free to reach out
                 using the contact form or through my social media profiles.
               </p>
@@ -61,7 +61,7 @@ const Contact = () => {
                       Email
                     </h3>
                     <p className="font-opensans text-[#C0C0C0]">
-                      contact@babarjavaid.com
+                      javaidbabar@gmail.com
                     </p>
                   </div>
                 </div>
@@ -75,7 +75,7 @@ const Contact = () => {
                       Phone
                     </h3>
                     <p className="font-opensans text-[#C0C0C0]">
-                      +1 (555) 123-4567
+                      +92.323.4361373
                     </p>
                   </div>
                 </div>
@@ -89,7 +89,7 @@ const Contact = () => {
                       Location
                     </h3>
                     <p className="font-opensans text-[#C0C0C0]">
-                      San Francisco, CA
+                      Lahore, Pakistan
                     </p>
                   </div>
                 </div>
@@ -101,28 +101,28 @@ const Contact = () => {
                 </h3>
                 <div className="flex space-x-4">
                   <a
-                    href="https://github.com"
+                    href="https://github.com/javaidbabar"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-gray-900 p-3 rounded-full hover:bg-[#C0C0C0] hover:text-black transition-colors duration-300"
+                    className="bg-white p-3 rounded-full hover:bg-[#5aba4a] hover:text-black transition-colors duration-300"
                   >
                     <Github className="h-6 w-6" />
                   </a>
                   <a
-                    href="https://linkedin.com"
+                    href="https://linkedin.com/in/javaidbabar"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-gray-900 p-3 rounded-full hover:bg-[#C0C0C0] hover:text-black transition-colors duration-300"
+                    className="bg-white p-3 rounded-full hover:bg-[#5aba4a] hover:text-black transition-colors duration-300"
                   >
                     <Linkedin className="h-6 w-6" />
                   </a>
                   <a
-                    href="https://twitter.com"
+                    href="https://x.com/javaidbabar"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-gray-900 p-3 rounded-full hover:bg-[#C0C0C0] hover:text-black transition-colors duration-300"
+                    className="bg-white p-3 rounded-full hover:bg-[#5aba4a] hover:text-black transition-colors duration-300"
                   >
-                    <Twitter className="h-6 w-6" />
+                    <X className="h-6 w-6" />
                   </a>
                 </div>
               </div>

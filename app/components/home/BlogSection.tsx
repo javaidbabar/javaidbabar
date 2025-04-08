@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import {
   Card,
@@ -31,7 +30,7 @@ interface BlogSectionProps {
 
 const BlogSection = ({
   title = "Latest Articles",
-  subtitle = "Insights and thoughts on software development, architecture, and technology trends",
+  subtitle = "Insights and thoughts on software development, architecture, and technology trends; please note that these are not all my articles and only the contents placeholders. It is a work in progress.",
   posts = [
     {
       id: "1",

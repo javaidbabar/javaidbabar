@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import ProjectCard from "@/components/ProjectCard";
 import { Button } from "@/components/ui/button";
@@ -20,7 +19,7 @@ interface FeaturedProjectsProps {
 
 const FeaturedProjects = ({
   title = "Featured Projects",
-  subtitle = "A selection of my recent work and personal projects",
+  subtitle = "A selection of my recent work and personal projects; please note that these are not all my projects and only the contents placeholders. It is a work in progress.",
   projects = [
     {
       id: "1",
