@@ -49,7 +49,7 @@ const Footer = ({ className }: FooterProps = {}) => {
           <div className="space-y-4">
             <h2 className="font-heading text-2xl font-bold">Babar Javaid</h2>
             <p className="font-opensans text-gray-300">
-              Software Architect & Engineer
+            Principal Software Architect, Engineering Leader, and Software Development Manager
             </p>
             <p className="font-opensans text-sm text-gray-400">
               Building innovative solutions with clean, efficient code.
