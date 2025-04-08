@@ -90,7 +90,7 @@ const BlogSection = ({
   };
 
   return (
-    <section className="w-full py-20 bg-black" id="blog">
+    <section className="w-full py-20 bg-white" id="blog">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -99,10 +99,10 @@ const BlogSection = ({
           transition={{ duration: 0.6 }}
           className="mb-12 text-center"
         >
-          <h2 className="font-montserrat mb-4 text-4xl font-bold text-white md:text-5xl">
+          <h2 className="font-montserrat mb-4 text-4xl font-bold text-black md:text-5xl">
             {title}
           </h2>
-          <p className="font-opensans mx-auto max-w-2xl text-lg text-[#C0C0C0]">
+          <p className="font-opensans mx-auto max-w-2xl text-lg text-gray-700">
             {subtitle}
           </p>
         </motion.div>
@@ -164,7 +164,7 @@ const BlogSection = ({
         >
           <Button
             onClick={onViewAllClick}
-            className="border-[#C0C0C0] bg-transparent px-8 py-6 text-lg font-bold text-white hover:bg-[#C0C0C0] hover:text-black"
+            className="border-black bg-transparent px-8 py-6 text-lg font-bold text-black hover:bg-black hover:text-white"
             variant="outline"
           >
             View All Articles

@@ -76,6 +76,27 @@ const Footer = ({ className }: FooterProps = {}) => {
             </ul>
           </div>
 
+          {/* Newsletter */}
+          <div className="space-y-4">
+            {/* <h3 className="font-heading text-lg font-bold text-[#C0C0C0]">
+              Stay Updated
+            </h3>
+            <p className="font-opensans text-sm text-gray-300">
+              Subscribe to my newsletter for the latest updates on projects and
+              blog posts.
+            </p>
+            <div className="flex">
+              <input
+                type="email"
+                placeholder="Your email"
+                className="w-full rounded-l-md border border-gray-700 bg-gray-900 px-4 py-2 text-white focus:border-[#C0C0C0] focus:outline-none"
+              />
+              <button className="rounded-r-md bg-[#C0C0C0] px-4 py-2 font-heading font-bold text-black transition-colors hover:bg-[#A0A0A0]">
+                Subscribe
+              </button>
+            </div> */}
+          </div>
+          
           {/* Connect */}
           <div className="space-y-4">
             <h3 className="font-heading text-lg font-bold text-[#C0C0C0]">
@@ -101,26 +122,6 @@ const Footer = ({ className }: FooterProps = {}) => {
             </p>
           </div>
 
-          {/* Newsletter */}
-          <div className="space-y-4">
-            <h3 className="font-heading text-lg font-bold text-[#C0C0C0]">
-              Stay Updated
-            </h3>
-            <p className="font-opensans text-sm text-gray-300">
-              Subscribe to my newsletter for the latest updates on projects and
-              blog posts.
-            </p>
-            <div className="flex">
-              <input
-                type="email"
-                placeholder="Your email"
-                className="w-full rounded-l-md border border-gray-700 bg-gray-900 px-4 py-2 text-white focus:border-[#C0C0C0] focus:outline-none"
-              />
-              <button className="rounded-r-md bg-[#C0C0C0] px-4 py-2 font-heading font-bold text-black transition-colors hover:bg-[#A0A0A0]">
-                Subscribe
-              </button>
-            </div>
-          </div>
         </div>
 
         <Separator className="my-8 bg-gray-800" />
