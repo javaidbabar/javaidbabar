@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
-import { Menu, X, Github, Linkedin, ChevronDown } from "lucide-react";
+import { Menu, X, Twitter, Github, Linkedin, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import {
@@ -85,9 +85,9 @@ const Header = ({ className }: HeaderProps = {}) => {
       label: "LinkedIn",
     },
     {
-      icon: <X className="h-6 w-6" />,
+      icon: <Twitter className="h-5 w-5" />,
       href: "https://x.com/javaidbabar",
-      label: "X",
+      label: "Twitter",
     },
   ];
 

@@ -11,7 +11,7 @@ import {
   Send,
   Github,
   Linkedin,
-  X,
+  Twitter,
 } from "lucide-react";
 
 const Contact = () => {
@@ -122,7 +122,7 @@ const Contact = () => {
                     rel="noopener noreferrer"
                     className="bg-white p-3 rounded-full hover:bg-[#5aba4a] hover:text-black transition-colors duration-300"
                   >
-                    <X className="h-6 w-6" />
+                    <Twitter className="h-5 w-5" />
                   </a>
                 </div>
               </div>
