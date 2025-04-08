@@ -1,27 +1,10 @@
-// import React from "react";
-// import { motion } from "framer-motion";
-import HeroSection from "../components/HeroSection";
-import SkillsSection from "../components/home/SkillsSection";
-import FeaturedProjects from "../components/home/FeaturedProjects";
-import AboutSection from "../components/home/AboutSection";
-import BlogSection from "../components/home/BlogSection";
-import Header from "../components/layout/Header";
-import Footer from "../components/layout/Footer";
+import Home from "@/components/home";
+import type { MetaFunction } from "@remix-run/node";
 
-const Home = () => {
-  return (
-    <div className="bg-black min-h-screen">
-      <Header />
-      <main className="pt-20">
-        <HeroSection />
-        <AboutSection />
-        <SkillsSection />
-        <FeaturedProjects />
-        <BlogSection />
-      </main>
-      <Footer />
-    </div>
-  );
+export const meta: MetaFunction = () => {
+  return [{ title: "It's all about Babar Javaid" }, { name: "description", content: "It's all about Babar Javaid" }];
 };
 
-export default Home;
+export default function Index() {
+  return <Home />;
+}

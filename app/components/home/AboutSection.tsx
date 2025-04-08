@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
@@ -29,7 +28,7 @@ const AboutSection = ({
     "Microservices",
     "CI/CD",
   ],
-  imageUrl = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80",
+  imageUrl = "javaidbabar-pic.jpg",
   resumeUrl = "/resume",
 }: AboutSectionProps) => {
   return (

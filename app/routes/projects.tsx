@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
-import ProjectCard from "@/components/shared/ProjectCard";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
+import ProjectCard from "@/components/ProjectCard";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import {
   Dialog,
   DialogContent,

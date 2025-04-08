@@ -1,7 +1,6 @@
-import React from "react";
 import { motion } from "framer-motion";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -32,7 +31,7 @@ const Contact = () => {
               Contact Me
             </h1>
             <p className="font-opensans mx-auto max-w-2xl text-lg text-[#C0C0C0]">
-              Let's discuss your project or opportunity
+              Let&apos;s discuss your project or opportunity
             </p>
           </motion.div>
 

@@ -1,4 +1,3 @@
-import React from "react";
 import { cn } from "@/lib/utils";
 import { Separator } from "@/components/ui/separator";
 import { Github, Linkedin, Twitter, Mail, ExternalLink } from "lucide-react";
@@ -15,22 +14,22 @@ const Footer = ({ className }: FooterProps = {}) => {
     {
       name: "GitHub",
       icon: <Github size={20} />,
-      url: "https://github.com",
+      url: "https://github.com/javaidbabar",
     },
     {
       name: "LinkedIn",
       icon: <Linkedin size={20} />,
-      url: "https://linkedin.com",
+      url: "https://www.linkedin.com/in/javaidbabar/",
     },
     {
       name: "Twitter",
       icon: <Twitter size={20} />,
-      url: "https://twitter.com",
+      url: "https://x.com/javaidbabar",
     },
     {
       name: "Email",
       icon: <Mail size={20} />,
-      url: "mailto:contact@example.com",
+      url: "mailto:javaidbabar@gmail.com",
     },
   ];
 
@@ -48,7 +47,7 @@ const Footer = ({ className }: FooterProps = {}) => {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3 lg:grid-cols-4">
           {/* Brand Section */}
           <div className="space-y-4">
-            <h2 className="font-heading text-2xl font-bold">John Doe</h2>
+            <h2 className="font-heading text-2xl font-bold">Babar Javaid</h2>
             <p className="font-opensans text-gray-300">
               Software Architect & Engineer
             </p>
@@ -98,7 +97,7 @@ const Footer = ({ className }: FooterProps = {}) => {
               ))}
             </div>
             <p className="font-opensans text-sm text-gray-400">
-              Let's collaborate on your next project
+              Let&apos;s collaborate on your next project
             </p>
           </div>
 
@@ -128,9 +127,9 @@ const Footer = ({ className }: FooterProps = {}) => {
 
         <div className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
           <p className="font-opensans text-sm text-gray-400">
-            © {currentYear} John Doe. All rights reserved.
+          &copy; {currentYear} Babar Javaid. All rights reserved.
           </p>
-          <div className="flex space-x-6">
+          {/* <div className="flex space-x-6">
             <a
               href="/privacy"
               className="font-opensans text-sm text-gray-400 hover:text-[#C0C0C0]"
@@ -143,7 +142,7 @@ const Footer = ({ className }: FooterProps = {}) => {
             >
               Terms of Service
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

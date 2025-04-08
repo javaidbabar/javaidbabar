@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
+// import { Button } from "@/components/ui/button";
+// import { Download } from "lucide-react";
 
 interface TimelineItem {
   period: string;
@@ -145,11 +145,10 @@ const Resume = () => {
               transition={{ duration: 0.6 }}
             >
               <h1 className="font-heading text-4xl md:text-5xl font-bold text-white mb-2">
-                Babar Javaid
+                Resume
               </h1>
               <p className="font-opensans text-lg text-[#C0C0C0]">
-                My professional journey as a Software Architect and Engineer
-                with a focus on building scalable and high-performance applications.
+                My professional journey and qualifications
               </p>
             </motion.div>
 
@@ -159,10 +158,10 @@ const Resume = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mt-4 md:mt-0"
             >
-              <Button className="bg-[#C0C0C0] text-black hover:bg-white flex items-center gap-2 px-6 py-5">
+              {/* <Button className="bg-[#C0C0C0] text-black hover:bg-white flex items-center gap-2 px-6 py-5">
                 <Download size={18} />
                 Download PDF
-              </Button>
+              </Button> */}
             </motion.div>
           </div>
 

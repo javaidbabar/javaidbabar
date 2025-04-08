@@ -18,56 +18,56 @@ interface HeroSectionProps {
 
 const heroOptions: HeroOption[] = [
   {
-    headline: "🚀 Tech Leader | SaaS Innovator | Business Strategist",
+    headline: "Driving Innovation in SaaS & AI",
     subheadline:
-      "With 20+ years of experience in software development, SaaS, and business growth, I help companies scale, optimize, and innovate.",
+      "With 20+ years of experience in software development, I specialize in AI-driven SaaS solutions and enterprise tech strategies to help businesses scale.",
     cta: {
-      primary: "📩 Let's Connect",
-      secondary: "🔥 Explore My Work",
+      primary: " Let’s Build the Future Together",
+      secondary: "",
     },
     backgroundImage:
       "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1920&q=80",
   },
   {
-    headline: "Building the Future of AI, SaaS & Business Growth",
+    headline: "From Startups to Enterprise Growth",
     subheadline:
-      "I create, scale, and optimize SaaS products, AI solutions, and digital businesses, driving impact across industries.",
+      "I help businesses transition from ideas to scalable, revenue-generating ventures through strategic execution, process automation, and AI-driven innovation.",
     cta: {
-      primary: "🚀 See My Work",
-      secondary: "📞 Let's Talk",
+      primary: "Let’s Talk Strategy",
+      secondary: "",
     },
     backgroundImage:
       "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80",
   },
   {
-    headline: "Babar Javaid – Tech Entrepreneur & SaaS Visionary",
+    headline: "Building Smarter, Faster, and Scalable Businesses",
     subheadline:
-      "From startup scaling to enterprise consulting, I turn ideas into high-impact solutions. Let's build the future, together.",
+      "I optimize digital workflows, automation, and AI-driven processes to enhance efficiency and drive business success.",
     cta: {
-      primary: "💡 Read My Insights",
-      secondary: "🎯 Work With Me",
+      primary: "Automate & Scale Your Business",
+      secondary: "",
     },
     backgroundImage:
       "https://images.unsplash.com/photo-1581089781785-603411fa81e5?w=1920&q=80",
   },
   {
-    headline: "Scaling Businesses & Investing in the Future",
+    headline: "Investing in the Future of Tech & SaaS",
     subheadline:
-      "As a SaaS founder, tech consultant, and investor, I help businesses achieve exponential growth through innovation and strategy.",
+      "As an entrepreneur and investor, I explore high-impact tech opportunities - from SaaS startups to AI innovations—helping businesses achieve exponential growth.",
     cta: {
-      primary: "📊 Explore My Ventures",
-      secondary: "🤝 Let's Collaborate",
+      primary: "Work With Me",
+      secondary: "",
     },
     backgroundImage:
       "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1920&q=80",
   },
   {
-    headline: "👋 Hi, I'm Babar Javaid.",
+    headline: "Tech Speaker | Mentor | Growth Strategist",
     subheadline:
-      "I build, scale, and optimize tech businesses, SaaS products, and digital solutions.",
+      "Sharing insights on AI, SaaS, Agile, and business scaling, mentoring future leaders, and building impactful products.",
     cta: {
-      primary: "🚀 Learn More",
-      secondary: "💡 Let's Connect",
+      primary: "Explore My Insights",
+      secondary: "",
     },
     backgroundImage:
       "https://images.unsplash.com/photo-1484417894907-623942c8ee29?w=1920&q=80",
