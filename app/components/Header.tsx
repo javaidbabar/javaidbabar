@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
-import { Menu, X, Twitter, Github, Linkedin, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import {
@@ -9,6 +9,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
+import { projects, socialLinks } from "@/data";
 
 interface HeaderProps {
   className?: string;
@@ -49,47 +50,7 @@ const Header = ({ className }: HeaderProps = {}) => {
     },
   ];
 
-  const featuredProjects = [
-    {
-      title: "E-Commerce Platform",
-      excerpt: "Full-stack e-commerce solution with real-time inventory",
-      path: "/projects/1",
-      image:
-        "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=300&q=80",
-    },
-    {
-      title: "AI Content Generator",
-      excerpt: "AI-powered application for custom content creation",
-      path: "/projects/2",
-      image:
-        "https://images.unsplash.com/photo-1677442135136-760c813028c4?w=300&q=80",
-    },
-    {
-      title: "Financial Dashboard",
-      excerpt: "Interactive dashboard for tracking investments",
-      path: "/projects/3",
-      image:
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&q=80",
-    },
-  ];
-
-  const socialLinks = [
-    {
-      icon: <Github className="h-5 w-5" />,
-      href: "https://github.com/javaidbabar",
-      label: "GitHub",
-    },
-    {
-      icon: <Linkedin className="h-5 w-5" />,
-      href: "https://linkedin.com/in/javaidbabar",
-      label: "LinkedIn",
-    },
-    {
-      icon: <Twitter className="h-5 w-5" />,
-      href: "https://x.com/javaidbabar",
-      label: "Twitter",
-    },
-  ];
+  const featuredProjects = projects.slice(0, 3);
 
   return (
     <header
@@ -146,7 +107,7 @@ const Header = ({ className }: HeaderProps = {}) => {
                             </Link>
                           ))
                         : featuredProjects.map((project, idx) => (
-                            <Link key={idx} to={project.path} className="group">
+                            <Link key={idx} to={'/projects'} className="group">
                               <div className="space-y-2">
                                 <div className="overflow-hidden rounded-md">
                                   <img
@@ -159,7 +120,7 @@ const Header = ({ className }: HeaderProps = {}) => {
                                   {project.title}
                                 </h4>
                                 <p className="text-sm text-gray-400">
-                                  {project.excerpt}
+                                  {project.description}
                                 </p>
                               </div>
                             </Link>
@@ -241,7 +202,7 @@ const Header = ({ className }: HeaderProps = {}) => {
               </nav>
 
               <div className="mt-auto flex space-x-6 justify-center">
-                {socialLinks.map((link, index) => (
+                {socialLinks.slice(0, 3).map((link, index) => (
                   <a
                     key={index}
                     href={link.href}

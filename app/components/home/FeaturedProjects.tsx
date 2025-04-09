@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import ProjectCard from "@/components/ProjectCard";
 import { Button } from "@/components/ui/button";
+import { projects as myProjects } from "@/data";
 
 interface Project {
   id: string;
@@ -19,45 +20,8 @@ interface FeaturedProjectsProps {
 
 const FeaturedProjects = ({
   title = "Featured Projects",
-  subtitle = "A selection of my recent work and personal projects; please note that these are not all my projects and only the contents placeholders. It is a work in progress.",
-  projects = [
-    {
-      id: "1",
-      title: "E-Commerce Platform",
-      description:
-        "A full-stack e-commerce solution with real-time inventory management and payment processing.",
-      image:
-        "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-    },
-    {
-      id: "2",
-      title: "AI Content Generator",
-      description:
-        "An AI-powered application that creates custom content based on user preferences and requirements.",
-      image:
-        "https://images.unsplash.com/photo-1677442135136-760c813028c4?w=800&q=80",
-      technologies: ["Python", "TensorFlow", "OpenAI API", "Flask"],
-    },
-    {
-      id: "3",
-      title: "Financial Dashboard",
-      description:
-        "Interactive dashboard for tracking investments, expenses, and financial goals with data visualization.",
-      image:
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
-      technologies: ["Vue.js", "D3.js", "Firebase", "Tailwind CSS"],
-    },
-    {
-      id: "4",
-      title: "Social Media Analytics",
-      description:
-        "A comprehensive analytics platform for tracking social media performance across multiple platforms.",
-      image:
-        "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&q=80",
-      technologies: ["React", "Redux", "Express", "PostgreSQL"],
-    },
-  ],
+  subtitle = "A selection of my recent work and personal projects.",
+  projects = myProjects.slice(0, 4),
   onViewAllClick = () => console.log("View all projects clicked"),
 }: FeaturedProjectsProps) => {
   const containerVariants = {
@@ -128,7 +92,7 @@ const FeaturedProjects = ({
         >
           <Button
             onClick={onViewAllClick}
-            className="border-[#C0C0C0] bg-transparent px-8 py-6 text-lg font-bold text-white hover:bg-[#C0C0C0] hover:text-black"
+            className="border-[#C0C0C0] bg-black px-8 py-6 text-lg font-bold text-white hover:bg-white hover:text-black"
             variant="outline"
           >
             View All Projects

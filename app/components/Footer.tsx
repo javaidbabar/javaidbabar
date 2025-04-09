@@ -1,7 +1,8 @@
 import { cn } from "@/lib/utils";
 import { Separator } from "@/components/ui/separator";
-import { Github, Linkedin, Twitter, Mail, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
+import { socialLinks } from "@/data";
 
 interface FooterProps {
   className?: string;
@@ -9,29 +10,6 @@ interface FooterProps {
 
 const Footer = ({ className }: FooterProps = {}) => {
   const currentYear = new Date().getFullYear();
-
-  const socialLinks = [
-    {
-      name: "GitHub",
-      icon: <Github size={20} />,
-      url: "https://github.com/javaidbabar",
-    },
-    {
-      name: "LinkedIn",
-      icon: <Linkedin size={20} />,
-      url: "https://www.linkedin.com/in/javaidbabar/",
-    },
-    {
-      name: "Twitter",
-      icon: <Twitter size={20} />,
-      url: "https://x.com/javaidbabar",
-    },
-    {
-      name: "Email",
-      icon: <Mail size={20} />,
-      url: "mailto:javaidbabar@gmail.com",
-    },
-  ];
 
   const quickLinks = [
     { name: "Home", url: "/" },
@@ -106,12 +84,12 @@ const Footer = ({ className }: FooterProps = {}) => {
               {socialLinks.map((link, index) => (
                 <motion.a
                   key={index}
-                  href={link.url}
+                  href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-700 text-gray-300 transition-colors hover:border-[#C0C0C0] hover:text-[#C0C0C0]"
                   whileHover={{ y: -5, transition: { duration: 0.3 } }}
-                  aria-label={link.name}
+                  aria-label={link.label}
                 >
                   {link.icon}
                 </motion.a>
