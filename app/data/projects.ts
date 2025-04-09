@@ -64,10 +64,7 @@ export const projects: Project[] = [
     ],
     liveUrl: "https://kartie.com/",
     githubUrl: "",
-    screenshots: [
-      "projects/kartie-pic-1.png",
-      "projects/kartie-pic-2.svg",
-    ],
+    screenshots: [],
   },
   {
     id: "4",

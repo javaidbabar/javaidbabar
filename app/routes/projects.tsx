@@ -31,7 +31,7 @@ const Projects = () => {
 
   const filteredProjects = projects.filter(
     (project) =>
-      activeCategory === "All" || project.category.includes(activeCategory),
+      activeCategory === "All" || project.category.includes(activeCategory)
   );
 
   const handleProjectClick = (project: Project) => {
@@ -101,101 +101,111 @@ const Projects = () => {
 
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
         {selectedProject && (
-          <DialogContent className="bg-gray-900 text-white border border-gray-800 max-w-4xl">
-            <DialogHeader>
-              <DialogTitle className="font-heading text-2xl font-bold text-white">
-                {selectedProject.title}
-              </DialogTitle>
-              <DialogDescription className="font-opensans text-[#C0C0C0]">
-                {selectedProject.category}
-              </DialogDescription>
+          <DialogContent className="bg-gray-900 text-white border border-gray-800 max-w-4xl max-h-[80vh] overflow-hidden">
+            <DialogHeader className="sticky top-0 bg-gray-900 flex justify-between">
+              <div>
+                <DialogTitle className="font-heading text-2xl font-bold text-white">
+                  {selectedProject.title}
+                </DialogTitle>
+                <DialogDescription className="font-opensans text-[#A0A0A0]">
+                    {selectedProject.category.join(" | ")}
+                </DialogDescription>
+              </div>
             </DialogHeader>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
-              <div>
-                <img
-                  src={selectedProject.image}
-                  alt={selectedProject.title}
-                  className="w-full h-auto rounded-lg object-cover"
-                />
+            <div
+              className="overflow-y-auto max-h-[calc(80vh-100px)]"
+              style={{
+                scrollbarColor: "gray transparent",
+                scrollbarWidth: "thin",
+              }}
+            >
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                <div>
+                  <img
+                    src={selectedProject.image}
+                    alt={selectedProject.title}
+                    className="w-full h-auto rounded-lg object-cover"
+                  />
 
-                <div className="flex flex-wrap gap-2 mt-4">
-                  {selectedProject.technologies.map((tech, index) => (
-                    <Badge key={index} className="bg-[#C0C0C0] text-black">
-                      {tech}
-                    </Badge>
-                  ))}
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    {selectedProject.technologies.map((tech, index) => (
+                      <Badge key={index} className="bg-[#C0C0C0] text-black">
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
+
+                  <div className="flex gap-4 mt-6">
+                    {selectedProject.liveUrl && (
+                      <Button
+                        className="bg-white text-black hover:bg-[#C0C0C0] flex items-center gap-2"
+                        onClick={() =>
+                          window.open(selectedProject.liveUrl, "_blank")
+                        }
+                      >
+                        <ExternalLink size={16} />
+                        Live Demo
+                      </Button>
+                    )}
+
+                    {selectedProject.githubUrl && (
+                      <Button
+                        variant="outline"
+                        className="border-[#C0C0C0] text-white hover:bg-[#C0C0C0] hover:text-black flex items-center gap-2"
+                        onClick={() =>
+                          window.open(selectedProject.githubUrl, "_blank")
+                        }
+                      >
+                        <Github size={16} />
+                        View Code
+                      </Button>
+                    )}
+                  </div>
                 </div>
 
-                <div className="flex gap-4 mt-6">
-                  {selectedProject.liveUrl && (
-                    <Button
-                      className="bg-white text-black hover:bg-[#C0C0C0] flex items-center gap-2"
-                      onClick={() =>
-                        window.open(selectedProject.liveUrl, "_blank")
-                      }
-                    >
-                      <ExternalLink size={16} />
-                      Live Demo
-                    </Button>
-                  )}
-
-                  {selectedProject.githubUrl && (
-                    <Button
-                      variant="outline"
-                      className="border-[#C0C0C0] text-white hover:bg-[#C0C0C0] hover:text-black flex items-center gap-2"
-                      onClick={() =>
-                        window.open(selectedProject.githubUrl, "_blank")
-                      }
-                    >
-                      <Github size={16} />
-                      View Code
-                    </Button>
-                  )}
-                </div>
-              </div>
-
-              <div>
-                <h3 className="font-heading text-lg font-bold text-white mb-2">
-                  Overview
-                </h3>
-                <p className="font-opensans text-gray-300 mb-4">
-                  {selectedProject.fullDescription}
-                </p>
-
-                <h3 className="font-heading text-lg font-bold text-white mb-2">
-                  Key Features
-                </h3>
-                <ul className="list-disc pl-5 mb-4 font-opensans text-gray-300">
-                  {selectedProject.features?.map((feature, index) => (
-                    <li key={index} className="mb-1">
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-
-            {selectedProject.screenshots &&
-              selectedProject.screenshots.length > 1 && (
-                <div className="mt-6">
-                  <h3 className="font-heading text-lg font-bold text-white mb-3">
-                    Additional Screenshots
+                <div>
+                  <h3 className="font-heading text-lg font-bold text-white mb-2">
+                    Overview
                   </h3>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {selectedProject.screenshots
-                      // .slice(1)
-                      .map((screenshot, index) => (
+                  <p className="font-opensans text-gray-300 mb-4">
+                    {selectedProject.fullDescription}
+                  </p>
+
+                  <h3 className="font-heading text-lg font-bold text-white mb-2">
+                    Key Features
+                  </h3>
+                  <ul className="list-disc pl-5 mb-4 font-opensans text-gray-300">
+                    {selectedProject.features?.map((feature, index) => (
+                      <li key={index} className="mb-1">
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+
+              {selectedProject.screenshots &&
+                selectedProject.screenshots.length > 1 && (
+                  <div className="mt-6">
+                    <h3 className="font-heading text-lg font-bold text-white mb-3">
+                      Additional Screenshots
+                    </h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {selectedProject.screenshots.map((screenshot, index) => (
                         <img
                           key={index}
                           src={screenshot}
-                          alt={`${selectedProject.title} screenshot ${index + 2}`}
+                          alt={`${selectedProject.title} screenshot ${
+                            index + 2
+                          }`}
                           className="w-full h-auto rounded-lg object-cover"
                         />
                       ))}
+                    </div>
                   </div>
-                </div>
-              )}
+                )}
+            </div>
           </DialogContent>
         )}
       </Dialog>
