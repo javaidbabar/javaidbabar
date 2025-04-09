@@ -4,7 +4,7 @@ export interface Project {
   description: string;
   image: string;
   technologies: string[];
-  category: string;
+  category: string[];
   fullDescription?: string;
   features?: string[];
   liveUrl?: string;
@@ -20,8 +20,8 @@ export const projects: Project[] = [
       "AI-powered video personalization platform transforming human-AI interaction.",
     image:
       "projects/tavus-pic-2.png",
-    technologies: ["React", "Node.js",  "Python", "TensorFlow", "AWS", "Docker", "MongoDB", "Redis", "PostgreSQL", "Tailwind CSS"],
-    category: "Full Stack",
+    technologies: ["React", "Node.js",  "Python", "TensorFlow", "AWS", "GCP", "Azure", "Docker", "MongoDB", "Redis", "PostgreSQL", "Tailwind CSS", "Stripe"],
+    category: ["Full Stack", "Frontend", "Backend", "AI/ML"],
     fullDescription:
       "AI-powered video personalization platform transforming human-AI interaction. Building blocks to empower your AI Agent to see, hear, respond, and look human – in real time.",
     features: [
@@ -45,14 +45,39 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: "4",
-    title: "RemoteIQ (Formally CattronConnect)",
+    id: "5",
+    title: "Kartie - Effortless Savings with AI",
     description:
-      "A Web-based locomotive monitoring and diagnostic platform.",
+      "Kartie is your Shopping Sidekick: Price compare and find the best prices across different stores in one place.",
+    image:
+      "projects/kartie-pic-3.png",
+    technologies: ["React", "Tailwind CSS", ".Net Core", "PostgreSQL", "Redis", "AWS", "Python", "HuggingFace", "Semantic Search", "Entity Framework", "Docker"],
+    category: ["Full Stack", "AI/ML", "Frontend", "Backend"],
+    fullDescription:
+      `Kartie is your Shopping Sidekick: Price compare and find the best prices across different stores in one place.`,
+    features: [
+      "Kartie is your Shopping Sidekick: Price compare and find the best prices across different stores in one place",
+      "Build your Dream Cart: Curate carts from multiple stores and find the best deals with Smart Move",
+      "Smart Shopping Maximized Savings: Get the best prices on your favorite products with our AI-powered price comparison tool",
+      "Price Drop Alerts: Never miss a deal again! Get notified when prices drop on your favorite products",
+      "Price History: Track price changes over time and make informed decisions",
+    ],
+    liveUrl: "https://kartie.com/",
+    githubUrl: "",
+    screenshots: [
+      "projects/kartie-pic-1.png",
+      "projects/kartie-pic-2.svg",
+    ],
+  },
+  {
+    id: "4",
+    title: "RemoteIQ - Monitoring and Diagnostic Platform",
+    description:
+      "RemoteIQ™ Rail monitors activities in the yard, optimizing operations and helping keep assets and personnel safe.",
     image:
       "projects/cattron-connect-pic-1.png",
-    technologies: ["React", "Redux", "Express", "PostgreSQL"],
-    category: "Full Stack",
+    technologies: [".Net Framework - Web Forms", "MS SQL Server", "Windows Services", "HTML", "CSS", "PostgreSQL", "Data Warehouse", "Azure"],
+    category: ["Full Stack"],
     fullDescription:
       `RemoteIQ™ Rail is a cloud-based analytics tool that monitors activities in the yard, optimizing operations and helping keep assets and personnel safe. The cloud platform directly connects to the locomotive to gather vital information about operator productivity, wheel slip, speed violations, communication health, emergency brake incidents and more. A live virtual dashboard provides timely and sometimes even critical insights to help manage maintenance strategies and maximize performance.
        Event-based alerts and notifications are emailed to on-site supervisors and tracked within RemoteIQ. The responsive user interface creates a mobile-friendly experience for operators, providing a snapshot of yard conditions. It integrates with Google Maps for reporting on OCU location, current status and metrics.`,
@@ -83,15 +108,15 @@ export const projects: Project[] = [
   },
   {
     id: "2",
-    title: "Grip Studio",
+    title: "Grip Studio - Marketplace for Health and Fitness",
     description:
-      "The mobile marketplace for health and fitness.",
+      "Ensure that everyone has the opportunity to be in charge of their personal health and fitness.",
     image:
       "projects/grip-studio-pic-1.png",
-    technologies: ["React", "Node.js",  "Python", "TensorFlow", "AWS", "Docker", "MongoDB", "Redis", "PostgreSQL", "Tailwind CSS"],
-    category: "Full Stack",
+    technologies: ["React/Next.js", "Node/Nest.js", "React Native", "AWS", "Docker", "MongoDB", "Redis", "PostgreSQL", "Tailwind CSS", "Stripe"],
+    category: ["Full Stack", "Mobile", "Backend"],
     fullDescription:
-      "GripStudio is a multi-platform app to ensure that everyone has the opportunity to be in charge of their personal health and fitness.  ",
+      "GripStudio is a multi-platform app to ensure that everyone has the opportunity to be in charge of their personal health and fitness.",
     features: [
       "User authentication and profile management",
       "25+ fitness and wellness categories of all skill levels.",
@@ -110,14 +135,14 @@ export const projects: Project[] = [
   },
   {
     id: "3",
-    title: "Offer Approved",
+    title: "Offer Approved - Buying and Selling of Tickets",
     description:
-      "A buyer’s first marketplace: Tired of long lines and sold-out games? Browse, select, and list tickets easily, just through your phone.",
+      "Tired of long lines and sold-out games? Browse, select, and list tickets easily, just through your phone.",
     image:
       "projects/ofa-pic-1.png",
-    technologies: ["Vue.js", "D3.js", "Firebase", "Tailwind CSS"],
-    category: "Frontend",
-    fullDescription:
+      technologies: ["React/Next.js", "Node/Nest.js", "React Native", "AWS", "Docker", "MongoDB", "Redis", "PostgreSQL", "Tailwind CSS", "Stripe"],
+      category: ["Full Stack", "Mobile", "Backend"],
+      fullDescription:
       "A comprehensive financial dashboard that helps users track their investments, expenses, and financial goals. The application features interactive data visualizations, budget planning tools, and investment portfolio analysis to provide users with a complete overview of their financial health.",
     features: [
       "Expense tracking and categorization",

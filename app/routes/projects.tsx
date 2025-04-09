@@ -31,7 +31,7 @@ const Projects = () => {
 
   const filteredProjects = projects.filter(
     (project) =>
-      activeCategory === "All" || project.category === activeCategory,
+      activeCategory === "All" || project.category.includes(activeCategory),
   );
 
   const handleProjectClick = (project: Project) => {

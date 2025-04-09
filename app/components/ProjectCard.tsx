@@ -44,7 +44,7 @@ const ProjectCard = ({
             className="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
           />
         </div>
-        <CardHeader className="pb-2 flex-shrink-0 h-[80px]">
+        <CardHeader className="pb-2 flex-shrink-0 h-[90px]">
           <CardTitle className="font-heading text-xl font-bold text-white line-clamp-2">
             {title}
           </CardTitle>
