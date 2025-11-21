@@ -19,7 +19,7 @@ export const projects: Project[] = [
     description:
       "AI-powered video personalization platform transforming human-AI interaction.",
     image:
-      "projects/tavus-pic-2.png",
+      "/projects/tavus-pic-2.png",
     technologies: ["React", "Node.js",  "Python", "TensorFlow", "AWS", "GCP", "Azure", "Docker", "MongoDB", "Redis", "PostgreSQL", "Tailwind CSS", "Stripe"],
     category: ["Full Stack", "Frontend", "Backend", "AI/ML"],
     fullDescription:
@@ -40,8 +40,8 @@ export const projects: Project[] = [
     liveUrl: "https://www.tavus.io/",
     githubUrl: "",
     screenshots: [
-      "projects/tavus-pic-1.png",
-      "projects/tavus-pic-3.png",
+      "/projects/tavus-pic-1.png",
+      "/projects/tavus-pic-3.png",
     ],
   },
   {
@@ -50,7 +50,7 @@ export const projects: Project[] = [
     description:
       "Kartie is your Shopping Sidekick: Price compare and find the best prices across different stores in one place.",
     image:
-      "projects/kartie-pic-3.png",
+      "/projects/kartie-pic-3.png",
     technologies: ["React", "Tailwind CSS", ".Net Core", "PostgreSQL", "Redis", "AWS", "Python", "HuggingFace", "Semantic Search", "Entity Framework", "Docker"],
     category: ["Full Stack", "AI/ML", "Frontend", "Backend"],
     fullDescription:
@@ -72,7 +72,7 @@ export const projects: Project[] = [
     description:
       "RemoteIQ™ Rail monitors activities in the yard, optimizing operations and helping keep assets and personnel safe.",
     image:
-      "projects/cattron-connect-pic-1.png",
+      "/projects/cattron-connect-pic-1.png",
     technologies: [".Net Framework - Web Forms", "MS SQL Server", "Windows Services", "HTML", "CSS", "PostgreSQL", "Data Warehouse", "Azure"],
     category: ["Full Stack"],
     fullDescription:
@@ -109,7 +109,7 @@ export const projects: Project[] = [
     description:
       "Ensure that everyone has the opportunity to be in charge of their personal health and fitness.",
     image:
-      "projects/grip-studio-pic-1.png",
+      "/projects/grip-studio-pic-1.png",
     technologies: ["React/Next.js", "Node/Nest.js", "React Native", "AWS", "Docker", "MongoDB", "Redis", "PostgreSQL", "Tailwind CSS", "Stripe"],
     category: ["Full Stack", "Mobile", "Backend"],
     fullDescription:
@@ -127,7 +127,7 @@ export const projects: Project[] = [
     liveUrl: "https://www.gripstudio.app/",
     githubUrl: "",
     screenshots: [
-      "projects/grip-studio-pic-1.png",
+      "/projects/grip-studio-pic-1.png",
     ],
   },
   {
@@ -136,7 +136,7 @@ export const projects: Project[] = [
     description:
       "Tired of long lines and sold-out games? Browse, select, and list tickets easily, just through your phone.",
     image:
-      "projects/ofa-pic-1.png",
+      "/projects/ofa-pic-1.png",
       technologies: ["React/Next.js", "Node/Nest.js", "React Native", "AWS", "Docker", "MongoDB", "Redis", "PostgreSQL", "Tailwind CSS", "Stripe"],
       category: ["Full Stack", "Mobile", "Backend"],
       fullDescription:
